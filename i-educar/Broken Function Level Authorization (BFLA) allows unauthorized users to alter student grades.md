@@ -2,7 +2,7 @@
 
 ## **Summary**
 
-An API endpoint in i-Educar 2.9.0 is vulnerable to Broken Function Level Authorization (BFLA). An unauthenticated or unauthorized user is able to modify student grades by directly accessing the `/module/Api/Diario` endpoint, bypassing permission controls. This leads to severe integrity issues, where anyone with access to the API format can tamper with academic records.
+An API endpoint in i-Educar 2.9.0 is vulnerable to Broken Function Level Authorization (BFLA). An unauthorized user is able to modify student grades by directly accessing the `/module/Api/Diario` endpoint, bypassing permission controls. This leads to severe integrity issues, where anyone with access to the API format can tamper with academic records.
 
 ## **Details**
 
