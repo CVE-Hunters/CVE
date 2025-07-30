@@ -19,7 +19,8 @@ Payload: `<script>alert('PoC-XXS2')</script>`
 2 - Save it
 3 - Go to the option "Histórico"
 
-![[Pasted image 20250702164408.png]]
+<img width="1243" height="915" alt="Pasted image 20250702164408" src="https://github.com/user-attachments/assets/35d00b3a-3822-4e4d-8cad-a7eae3d74aeb" />
+
 
 ## Impact
 
