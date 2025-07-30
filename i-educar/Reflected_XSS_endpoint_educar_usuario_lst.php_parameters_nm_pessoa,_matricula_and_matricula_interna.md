@@ -27,7 +27,8 @@ The application fails to validate and sanitize user inputs in the `nm_pessoa`, `
 
 `"><script>alert('XSS-PoC2')</script>`
 
-![[Pasted image 20250704192500.png]]
+<img width="854" height="800" alt="Pasted image 20250704192500" src="https://github.com/user-attachments/assets/b441db20-2039-4283-ad24-656e5379d5b9" />
+
 
 **Example URLs:**
 
