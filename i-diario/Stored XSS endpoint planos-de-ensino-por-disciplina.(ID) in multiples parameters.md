@@ -19,13 +19,19 @@ Payload: `"><script>alert('XSS-PoC')</script>`
 2 - Save it
 3 - Go to the option "Histórico"
 
-![[Pasted image 20250702002209.png]]
+<img width="960" height="455" alt="Pasted image 20250702002209" src="https://github.com/user-attachments/assets/2bd92386-3a87-45b0-9b3e-bee3939ff560" />
+
 
 The result:
-![[Pasted image 20250702002235.png]]
+
+<img width="653" height="412" alt="Pasted image 20250702002235" src="https://github.com/user-attachments/assets/984b1a84-6bd6-44a6-94e5-5e75b2a53a9c" />
+
 
 The request:
-![[Pasted image 20250702002314.png]]
+
+<img width="1134" height="669" alt="Pasted image 20250702002314" src="https://github.com/user-attachments/assets/0d3c7414-3ce9-44c4-b251-922691f62acf" />
+
+
 ### Impact
 
 - Stealing session cookies: Attackers can use stolen session cookies to hijack a user's session and perform actions on their behalf.
