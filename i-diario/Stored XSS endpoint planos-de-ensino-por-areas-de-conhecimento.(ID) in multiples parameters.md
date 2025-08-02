@@ -19,10 +19,13 @@ Payload: `"><script>alert('XSS-PoC')</script>`
 2 - Save it
 3 - Go to the option "Histórico"
 
-![[Pasted image 20250702011855.png]]
+<img width="964" height="445" alt="Pasted image 20250702011855" src="https://github.com/user-attachments/assets/a1a0e404-b347-4810-943c-d54fe896696b" />
+
 
 The result:
-![[Pasted image 20250702012009.png]]
+
+<img width="682" height="415" alt="Pasted image 20250702012009" src="https://github.com/user-attachments/assets/3a4cad47-3504-456e-930c-b1adc9cdd8e9" />
+
 
 ### Impact
 
