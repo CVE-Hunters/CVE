@@ -16,7 +16,8 @@ The application fails to validate and sanitize user inputs in the `q` paramete
 Payload  
 `"><script>alert('XSS-PoC')</script>`
 
-![[Pasted image 20250701185709.png]]
+<img width="861" height="1054" alt="Pasted image 20250701185709" src="https://github.com/user-attachments/assets/571aefdb-7ee5-4745-b99a-78d83f406e98" />
+
 
 ### Impact
 
