@@ -19,7 +19,8 @@ Payload: `<ScRipT>alert(1)</ScRipT>`
 2 - Save it
 3 - Go to the option "Histórico"
 
-![[Pasted image 20250702103643.png]]
+<img width="967" height="843" alt="Pasted image 20250702103643" src="https://github.com/user-attachments/assets/c6d25e12-037d-4f1e-86b4-3fede1aa653f" />
+
 
 ### Impact
 
