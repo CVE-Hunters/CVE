@@ -32,3 +32,13 @@ Payload: `<script>alert('PoC-XXS2')</script>`
 - Defacing websites: Attackers can deface a website by altering its content.
 - Misdirecting users: Attackers can change the instructions given to users who visit the target website, misdirecting their behavior.
 - Damaging a business's reputation: Attackers can damage a business's image or spread misinformation by defacing a corporate website.
+
+# References
+
+[i-diario – Official Repository](https://github.com/portabilis/i-diario)
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr) 
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
