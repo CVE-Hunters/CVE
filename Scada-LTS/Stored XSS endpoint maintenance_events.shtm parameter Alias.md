@@ -29,7 +29,8 @@ The application does not properly validate or sanitize input in the `Alias` fiel
     
 2. Navigate to the **Maintenance vents** section and select **Add new event** or edit an existing entry.
 
-![[Pasted image 20250722191532.png]]
+<img width="947" height="421" alt="Pasted image 20250722191532" src="https://github.com/user-attachments/assets/51fdc3a5-0f77-44b3-b44d-35a2fd858bca" />
+
 
 1. In the **Alias** field, insert the payload above:
           
@@ -37,11 +38,13 @@ The application does not properly validate or sanitize input in the `Alias` fiel
     
 2. Fill in any other required fields and click **Save**.
 
-![[Pasted image 20250722191636.png]]
+<img width="778" height="437" alt="Pasted image 20250722191636" src="https://github.com/user-attachments/assets/c9c5039a-8876-4d32-a67a-f26e1dcef63f" />
+
 
 5. The stored payload is executed immediately in the browser, confirming the Stored XSS vulnerability.
     
-    ![[Pasted image 20250722191655.png]]
+<img width="865" height="422" alt="Pasted image 20250722191655" src="https://github.com/user-attachments/assets/adcd1385-9540-43a8-a482-937537948d3f" />
+
     
 ---
 
