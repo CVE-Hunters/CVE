@@ -25,7 +25,7 @@ GET /module/Api/pessoa?&oper=get&resource=pessoa&id=1 HTTP/1.1
 Cookie: i_educar_session=VALID_SESSION_COOKIE 
 ````
 
-![BOLA](/images/bfla002.png)
+![BOLA](/images/bola.002.png)
 
 3. Observe that user data for id=1 is returned, even if the logged-in user is not authorized to access that profile.
 
