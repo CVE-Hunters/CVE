@@ -16,7 +16,8 @@ The application fails to validate and sanitize user inputs in the `'Conteúdos'
 Payload  
 `<script>alert('PoC-XXS3')</script>`
 
-![[Pasted image 20250702161303.png]]
+<img width="1343" height="478" alt="Pasted image 20250702161303" src="https://github.com/user-attachments/assets/cc594a39-1f25-4aa8-832f-c0b5a7a7aa07" />
+
 
 ### Impact
 
