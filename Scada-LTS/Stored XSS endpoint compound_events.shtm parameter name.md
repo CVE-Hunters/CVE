@@ -1,4 +1,4 @@
-# oss-Site Scripting (XSS) Stored endpoint `compound_events.shtm` parameter `name`
+# Cross-Site Scripting (XSS) Stored endpoint `compound_events.shtm` parameter `name`
 
 ---
 
