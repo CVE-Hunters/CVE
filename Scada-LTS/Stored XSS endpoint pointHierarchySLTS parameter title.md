@@ -33,7 +33,6 @@ Register the payload in the `title` field at the `pointHIerarchySLTS` endpoint. 
 
 # References
 
-
 [SCADA-LTS – Official Repository](https://github.com/SCADA-LTS/Scada-LTS)
 
 # Discoverer
