@@ -61,6 +61,7 @@ Stored XSS attacks can lead to severe consequences, including:
     
 - **Reputation damage:** Eroding trust among system users and stakeholders
 
+
 ## References
 
 [SCADA-LTS – Official Repository](https://github.com/SCADA-LTS/Scada-LTS)
