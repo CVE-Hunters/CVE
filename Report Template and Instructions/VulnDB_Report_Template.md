@@ -55,7 +55,7 @@ This field should be updated only after CVE publication with the CVE link and Vu
 
 ### 🕵🏻‍♀️ Finder
 
-*Discovered with💜 by [XXX().* 
+*Discovered by [XXX().* 
 
 Add the link to your social networks
 
