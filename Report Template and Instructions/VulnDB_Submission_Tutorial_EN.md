@@ -30,7 +30,7 @@
 ## 4️⃣ Advisory / Exploit
 - Provide the link to the repository containing your POC
 - Select the option to request a CVE and click ADD
-
+![description](/Report%20Template%20and%20Instructions/cve.png)
 ---
 
 ## 5️⃣ Wait for triage
