@@ -19,7 +19,8 @@ Request using a session from a user without the Educacenso role:
 
 `GET /educacenso/consulta HTTP/1.1 Host: <target> Cookie: PHPSESSID=<low_privileged_session>`
 
-![[Pasted image 20250817125352.png]]
+<img width="1575" height="708" alt="image" src="https://github.com/user-attachments/assets/acb8179e-b4ed-4954-8d8b-5e5f6a14aae5" />
+
 
 **Observed Result:** The server responds with HTTP 200 and returns restricted content.  
 **Expected Result:** The server should respond with HTTP 403 (Forbidden).
