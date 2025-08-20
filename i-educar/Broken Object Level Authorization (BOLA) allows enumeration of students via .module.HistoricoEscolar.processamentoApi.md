@@ -64,13 +64,10 @@ This vulnerability exposes **Personally Identifiable Information (PII)** of stud
     
 - High impact (sensitive data exposure)
 
+
 ## Discoverer
 
 [Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
 
-by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
-    
-- Easy to exploit with parameter tampering
-    
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)  
 
----
