@@ -18,8 +18,10 @@ The application fails to enforce authorization checks to ensure that only privil
 
 1. Authenticate as a non-privileged user.
 
-![[Pasted image 20250821225155.png]]
-![[Pasted image 20250821225232.png]]
+<img width="1380" height="528" alt="image" src="https://github.com/user-attachments/assets/02cd535d-8784-4caf-bb89-08ca04895a91" />
+
+<img width="846" height="616" alt="image" src="https://github.com/user-attachments/assets/92bf93a9-38d6-49be-b911-0e5e06da59f9" />
+
 2. Send the following request:
 
 ```
@@ -44,7 +46,8 @@ Priority: u=0
 
 3. We could observe that the deletion was successful.
 
-![[Pasted image 20250822003833.png]]
+<img width="1574" height="542" alt="image" src="https://github.com/user-attachments/assets/aa537a63-20d8-4586-afad-9342380ac332" />
+
 ---
 
 ### Impact
