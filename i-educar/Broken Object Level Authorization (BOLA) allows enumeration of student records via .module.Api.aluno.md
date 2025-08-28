@@ -19,8 +19,10 @@ The application fails to enforce **object-level authorization** when handling th
 
 1. Authenticate as a non-privileged user.
 
-![[Pasted image 20250821225155.png]]
-![[Pasted image 20250821225232.png]]
+<img width="1380" height="528" alt="Pasted image 20250821225155" src="https://github.com/user-attachments/assets/abcb3516-444a-48cd-8af4-563276d1b952" />
+<img width="846" height="616" alt="Pasted image 20250821225232" src="https://github.com/user-attachments/assets/ac9b27b6-4a94-4bbc-9e07-2a2db6fc1548" />
+
+
 2. Send the following request:
 
 ```
@@ -40,7 +42,8 @@ Sec-Fetch-Site: same-origin
 
 ```
 
-![[Pasted image 20250821224929.png]]
+<img width="1345" height="676" alt="Pasted image 20250821224929" src="https://github.com/user-attachments/assets/3068c382-fb51-4bb6-9846-5ee9ebd27d1d" />
+
 
 3. We could observe that informations about the student were returned.
 
@@ -75,6 +78,13 @@ This vulnerability exposes **Personally Identifiable Information (PII)** of stud
 - High impact (sensitive data exposure)
     
 - Easy to exploit with parameter tampering
+
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
     
 
 ---
