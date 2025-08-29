@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) Stored endpoint `/usuarios/tipos/(ID)` parameters `"Tipos de Usuário"`, `"Descrição"`
+# Cross-Site Scripting (XSS) Stored endpoint `/usuarios/tipos/(ID)` parameters `"Tipos de Usuário"`, `"Descrição"`
 
 ---
 
@@ -34,14 +34,16 @@ The application fails to properly validate and sanitize user input in the `"Tipo
           
     `"><script>alert('XSS-PoC-Tipo')</script>`
 
-![[Pasted image 20250809201533.png]]
+<img width="1179" height="801" alt="Pasted image 20250809201533" src="https://github.com/user-attachments/assets/9618089c-5f27-48b3-a436-fde691ea07ba" />
+
 
 4. Click **Save**.
     
        
 5. The stored payload is executed immediately in the browser, confirming the Stored XSS vulnerability.
 
-	![[Pasted image 20250809201623.png]]
+<img width="968" height="556" alt="Pasted image 20250809201623" src="https://github.com/user-attachments/assets/e7bbacf8-bf6f-4b1f-b49e-15540bedb09a" />
+
 
 
 ---
