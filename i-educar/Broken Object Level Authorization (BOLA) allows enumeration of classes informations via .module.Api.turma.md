@@ -1,4 +1,4 @@
-Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Api/turma
+# Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Api/turma
 ### Summary
 
 A **Broken Object Level Authorization (BOLA)** vulnerability was identified in the `turma` API of the **i-Educar** application. This flaw allows a user without proper permissions to query the endpoint and retrieve ** class information**  by manipulating request parameters.
@@ -30,8 +30,10 @@ The application fails to enforce **object-level authorization** when handling th
 
 1. Authenticate as a non-privileged user.
 
-![[Pasted image 20250821225155.png]]
-![[Pasted image 20250821225232.png]]
+<img width="1380" height="528" alt="Pasted image 20250821225155" src="https://github.com/user-attachments/assets/6211642e-e642-4545-9b98-2f64f6d12353" />
+<img width="846" height="616" alt="Pasted image 20250821225232" src="https://github.com/user-attachments/assets/9fa0d5b8-5def-4bcc-b661-22a73787bdaa" />
+
+
 2. Send the following request:
 
 ```
@@ -52,7 +54,8 @@ Priority: u=0
 
 ```
 
-![[Pasted image 20250823181900.png]]
+<img width="1574" height="679" alt="Pasted image 20250823181900" src="https://github.com/user-attachments/assets/07323923-5a36-48a9-a488-1269a5463576" />
+
 
 3. We could observe that informations about classes were returned.
 
@@ -71,3 +74,9 @@ Priority: u=0
     
 
 ---
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
