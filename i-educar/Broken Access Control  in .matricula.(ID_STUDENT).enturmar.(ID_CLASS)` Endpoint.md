@@ -1,4 +1,4 @@
-Broken Access Control  in /matricula/[ID_STUDENT]/enturmar/[ID_CLASS]` Endpoint
+# Broken Access Control  in /matricula/[ID_STUDENT]/enturmar/[ID_CLASS]` Endpoint
 
 ---
 
@@ -20,8 +20,10 @@ The application fails to properly validate user permissions before granting acce
 ## PoC
 
 1. Authenticate as a non-privileged user.
-![[Pasted image 20250821190942.png]]
-![[Pasted image 20250821191019.png]]
+
+<img width="1843" height="533" alt="Pasted image 20250821190942" src="https://github.com/user-attachments/assets/528a5b22-4d98-4ad3-b6fe-357a4fffbf62" />
+<img width="936" height="436" alt="Pasted image 20250821191019" src="https://github.com/user-attachments/assets/5b190516-6229-4261-86f6-9be742934f86" />
+
     
 2. Send the following request::
 
@@ -45,7 +47,8 @@ Priority: u=0, i
     
 3. We could observe that we have access to the page and to the function to sign students from classes. And, this user, should not do that.
 
-![[Pasted image 20250821222850.png]]
+<img width="1555" height="666" alt="Pasted image 20250821222850" src="https://github.com/user-attachments/assets/384c88a6-b2b6-4a0f-b27c-19ab4c75548a" />
+
 
 ---
 
@@ -63,10 +66,10 @@ Broken Access Control vulnerabilities can have severe consequences, including:
     
 - Reputational damage to the organization
     
-
 ---
 
-## References
+## Discoverer
 
-This vulnerability falls under **OWASP Top 10 - A01:2021 Broken Access Control**  
-🔗 OWASP Documentation
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
