@@ -37,15 +37,18 @@ The application fails to validate and sanitize user input in the `email`, `data_
 	`"><img src=x onerror=alert('XSS-PoC-Email')>`
 	
 4. Fill in the remaining required fields and click **Save**.
-![[Pasted image 20250810002335.png]]
+<img width="1612" height="852" alt="Pasted image 20250810002335" src="https://github.com/user-attachments/assets/bf973ea4-a50e-4ad2-8015-ff6438e77312" />
+
  
 5. The reflected payload is executed immediately in the browser, confirming the XSS vulnerability.
 
-![[Pasted image 20250810002436.png]]
+<img width="1222" height="534" alt="Pasted image 20250810002436" src="https://github.com/user-attachments/assets/493874d9-3904-425e-9067-de39d7b9701e" />
+
 
 6. To trigger the XSS in the `data_inicial`, and `data_expiracao` the tester must change the fileds directly in de request. And send it to trigger the reflected XSS.
 
-![[Pasted image 20250810004505.png]]
+<img width="734" height="650" alt="Pasted image 20250810004505" src="https://github.com/user-attachments/assets/63a03974-581e-4853-8ec7-5da02b46b294" />
+
 
 ---
 
@@ -64,6 +67,7 @@ Reflected XSS vulnerabilities can have severe consequences, including:
 - **Reputation damage:** Exploiting trust between users and the application
     
 - **Client-side manipulation:** Altering application behavior and content in real time
+
 
 ## Discoverer
 
