@@ -22,7 +22,7 @@ Atualmente, colaboramos com os seguintes projetos listados abaixo.
 | Mautic    | GitHub                  | Variável                 |
 
 
-# CVE-Hunters Publiched CVE
+# CVE-Hunters Published CVE
 
 🇺🇸 English
 
