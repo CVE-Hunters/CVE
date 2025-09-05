@@ -33,11 +33,13 @@ The application fails to properly validate and sanitize user input in the `busca
     
     `/educar_escolaridade_lst.php?busca="><script>alert('XSS-PoC')</script>`
     
-![[Pasted image 20250810014353.png]]
+<img width="1276" height="672" alt="Pasted image 20250810014353" src="https://github.com/user-attachments/assets/ea6eba9e-1656-4fa1-a847-93db3ec7ef84" />
+
 
 4. Load the crafted URL in a browser. The injected script is executed immediately, confirming the presence of the reflected XSS vulnerability.
 
-![[Pasted image 20250810014420.png]]   
+<img width="1214" height="588" alt="Pasted image 20250810014420" src="https://github.com/user-attachments/assets/e822a678-e7c1-4095-a399-58913d8a6a30" />
+
 
 ---
 
