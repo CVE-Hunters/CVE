@@ -37,17 +37,21 @@ The application fails to properly validate and sanitize user input in the `abrev
     
 4. Fill in the remaining required fields and click **Save**.
 
-![[Pasted image 20250810021445.png]]    
+<img width="1295" height="648" alt="Pasted image 20250810021445" src="https://github.com/user-attachments/assets/96e801b7-ff2f-44d8-b55c-f88da6603cef" />
+
 
 5. The stored payload is executed immediately in the browser, confirming the Stored XSS vulnerability.
     
-    ![[Pasted image 20250810021508.png]]
+<img width="1193" height="615" alt="Pasted image 20250810021508" src="https://github.com/user-attachments/assets/5d789ed9-3920-49b4-a064-1a076a529205" />
+
     
 6. To trigger the XSS in the `tipoacao` parameter, the tester must change the fileds directly in de request. And send it to trigger the XSS. This is a reflected XSS.
 
-![[Pasted image 20250810023823.png]]
+<img width="727" height="599" alt="Pasted image 20250810023823" src="https://github.com/user-attachments/assets/e0c325ac-7058-4f48-9ff9-c3500104441b" />
 
-![[Pasted image 20250810023921.png]]
+
+<img width="1228" height="568" alt="Pasted image 20250810023921" src="https://github.com/user-attachments/assets/dad4d2bc-d22f-49ff-a7c0-2c923d7c47b9" />
+
 
 ---
 
