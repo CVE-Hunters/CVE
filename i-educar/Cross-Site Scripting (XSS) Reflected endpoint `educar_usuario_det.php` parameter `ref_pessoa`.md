@@ -27,17 +27,20 @@ The application fails to properly validate and sanitize user input in the `ref_p
     
 2. Identify a location where the `educar_usuario_det.php` endpoint is called with the `ref_pessoa` parameter. (Configurações > Permissões > Usuários)
 
-![[Pasted image 20250810010015.png]]
+<img width="1260" height="638" alt="Pasted image 20250810010015" src="https://github.com/user-attachments/assets/40395103-f895-4a7c-82a9-9f9c735a1aad" />
+
 
 3. Modify the URL to include the payload above. For example:    
         
     `/educar_usuario_det.php?ref_pessoa=';alert(String.fromCharCode(88,83,83))//';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,No known CVE></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>`
 
-![[Pasted image 20250810010104.png]]
+<img width="1478" height="652" alt="Pasted image 20250810010104" src="https://github.com/user-attachments/assets/cce9e5f3-9ff3-4417-b1d3-65557f744296" />
+
 
 4. Load the crafted URL in a browser. The injected script is executed immediately, confirming the presence of the reflected XSS vulnerability.
 
-![[Pasted image 20250810010126.png]]
+<img width="1021" height="565" alt="Pasted image 20250810010126" src="https://github.com/user-attachments/assets/cf590090-c2c6-4520-b4cb-aeaa919649b2" />
+
 
 ---
 
