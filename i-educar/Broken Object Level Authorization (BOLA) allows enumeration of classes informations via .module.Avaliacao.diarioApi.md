@@ -1,4 +1,4 @@
-Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Avaliacao/diarioApi
+# Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Avaliacao/diarioApi
 ### Summary
 
 A **Broken Object Level Authorization (BOLA)** vulnerability was identified in the `diario` API of the **i-Educar** application. This flaw allows a user without proper permissions to query the endpoint and retrieve ** class information**  by manipulating request parameters.
@@ -30,8 +30,10 @@ The application fails to enforce **object-level authorization** when handling th
 
 1. Authenticate as a non-privileged user.
 
-![[Pasted image 20250905173645.png]]
-![[Pasted image 20250821225232.png]]
+<img width="1439" height="663" alt="Pasted image 20250905173645" src="https://github.com/user-attachments/assets/c79bb6d5-1082-4f82-8095-85bf7a251c8e" />
+
+<img width="846" height="616" alt="Pasted image 20250821225232" src="https://github.com/user-attachments/assets/b7f69cc4-c874-42e5-8c6f-aeb96557072c" />
+
 2. Send the following request:
 
 ```
@@ -52,7 +54,8 @@ Priority: u=0
 
 ```
 
-![[Pasted image 20250905173506.png]]
+<img width="1437" height="673" alt="Pasted image 20250905173506" src="https://github.com/user-attachments/assets/dd796acd-760f-4728-af38-d4057b39f7cc" />
+
 
 3. We could observe that informations about classes were returned.
 
