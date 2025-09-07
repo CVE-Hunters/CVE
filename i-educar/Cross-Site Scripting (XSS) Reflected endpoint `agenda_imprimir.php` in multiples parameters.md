@@ -1,4 +1,4 @@
-Cross-Site Scripting (XSS) Reflected endpoint `agenda_imprimir.php` in multiples parameters
+# Cross-Site Scripting (XSS) Reflected endpoint `agenda_imprimir.php` in multiples parameters
 
 ---
 
@@ -52,10 +52,13 @@ Priority: u=0, i
 tipoacao=Novo"><script>alert('XSS-PoC')</script>&data_inicio=02%2F02%2F2025&data_fim=03%2F02%2F2025&impressora=0
 ```
 
-![[Pasted image 20250816234245.png]]
+<img width="840" height="585" alt="Pasted image 20250816234245" src="https://github.com/user-attachments/assets/d537a7f4-9d69-41a3-9cf3-46a5fb812a2c" />
+
 
 The result:
-![[Pasted image 20250816234414.png]]
+
+<img width="740" height="533" alt="Pasted image 20250816234414" src="https://github.com/user-attachments/assets/087c2fad-1b66-4bcf-bd30-af7db730b493" />
+
 
 the same vulnerability occurs in parameters `data_inicio and data_fim`.
 
