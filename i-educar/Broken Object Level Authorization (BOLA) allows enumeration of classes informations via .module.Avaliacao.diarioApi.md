@@ -1,7 +1,7 @@
-# Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Api/turma
+# Broken Object Level Authorization (BOLA) Broken Object Level Authorization (BOLA) allows enumeration of classes data via /module/Avaliacao/diarioApi
 ### Summary
 
-A **Broken Object Level Authorization (BOLA)** vulnerability was identified in the `turma` API of the **i-Educar** application. This flaw allows a user without proper permissions to query the endpoint and retrieve ** class information**  by manipulating request parameters.
+A **Broken Object Level Authorization (BOLA)** vulnerability was identified in the `diario` API of the **i-Educar** application. This flaw allows a user without proper permissions to query the endpoint and retrieve ** class information**  by manipulating request parameters.
 
 Although this vulnerability does not directly expose individual student data, it still constitutes an **unauthorized disclosure of academic structure information**, which can be leveraged for enumeration or as a stepping stone for further attacks.
 
@@ -10,7 +10,7 @@ Although this vulnerability does not directly expose individual student data, it
 ### Details
 
 **Vulnerable Endpoint:**  
-`GET /module/Api/turma`
+`GET /module/Avaliacao/diarioApi`
 
 The application fails to enforce **object-level authorization** when handling this endpoint. As a result, any authenticated user can manipulate the request values to access data that they shouldn't.
 
@@ -30,14 +30,14 @@ The application fails to enforce **object-level authorization** when handling th
 
 1. Authenticate as a non-privileged user.
 
-<img width="1380" height="528" alt="Pasted image 20250821225155" src="https://github.com/user-attachments/assets/6211642e-e642-4545-9b98-2f64f6d12353" />
-<img width="846" height="616" alt="Pasted image 20250821225232" src="https://github.com/user-attachments/assets/9fa0d5b8-5def-4bcc-b661-22a73787bdaa" />
+<img width="1439" height="663" alt="Pasted image 20250905173645" src="https://github.com/user-attachments/assets/c79bb6d5-1082-4f82-8095-85bf7a251c8e" />
 
+<img width="846" height="616" alt="Pasted image 20250821225232" src="https://github.com/user-attachments/assets/b7f69cc4-c874-42e5-8c6f-aeb96557072c" />
 
 2. Send the following request:
 
 ```
-GET /module/Api/turma?&oper=get&resource=turma&id=14 HTTP/1.1
+GET /module/Avaliacao/diarioApi?&resource=matriculas&oper=get&instituicao_id=1&escola_id=3&curso_id=4&serie_id=undefined&turma_id=3&ano_escolar=2025&componente_curricular_id=11&etapa=1&matricula_id=12&busca=S&mostrar_botao_replicar_todos=1&ano=2025&ref_cod_instituicao=1&ref_cod_escola=3&ref_cod_curso=4&ref_cod_serie=6&ref_cod_turma=3&etapa=1&ref_cod_componente_curricular=11&ref_cod_matricula=12&navegacao_tab=2 HTTP/1.1
 Host: localhost
 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
 Accept: application/json, text/javascript, */*; q=0.01
@@ -45,8 +45,8 @@ Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br, zstd
 X-Requested-With: XMLHttpRequest
 Connection: keep-alive
-Referer: http://localhost/intranet/educar_turma_det.php?cod_turma=14
-Cookie: i_educar_session=[low-privileged-session]
+Referer: http://localhost/module/Avaliacao/diario?&resource=matriculas&oper=get&instituicao_id=1&escola_id=3&curso_id=4&serie_id=undefined&turma_id=3&ano_escolar=2025&componente_curricular_id=11&etapa=1&matricula_id=12
+Cookie: educar_session=[low-privileged-session]
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
@@ -54,7 +54,7 @@ Priority: u=0
 
 ```
 
-<img width="1574" height="679" alt="Pasted image 20250823181900" src="https://github.com/user-attachments/assets/07323923-5a36-48a9-a488-1269a5463576" />
+<img width="1437" height="673" alt="Pasted image 20250905173506" src="https://github.com/user-attachments/assets/dd796acd-760f-4728-af38-d4057b39f7cc" />
 
 
 3. We could observe that informations about classes were returned.
