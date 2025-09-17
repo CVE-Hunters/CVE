@@ -20,8 +20,11 @@ The application fails to properly validate user permissions before granting acce
 ## PoC
 
 1. Authenticate as a non-privileged user.
-![[Pasted image 20250914131157.png]]
-![[Pasted image 20250821191019.png]]
+
+<img width="1603" height="673" alt="Pasted image 20250914131157" src="https://github.com/user-attachments/assets/3f4e8bcd-e2e8-4468-a57f-d1e631ff934b" />
+
+<img width="936" height="436" alt="Pasted image 20250821191019" src="https://github.com/user-attachments/assets/2caed485-5950-43d1-a8bb-f601322a7c1a" />
+
     
 2. Send the following request::
 
@@ -44,7 +47,8 @@ Priority: u=0, i
     
 3. We could observe that we have access to the page and to the function. And, this user, should not do that.
 
-![[Pasted image 20250914131656.png]]
+<img width="967" height="657" alt="Pasted image 20250914131656" src="https://github.com/user-attachments/assets/d424e8da-cc81-475f-bd68-b8e52f5ac85d" />
+
 
 ---
 
