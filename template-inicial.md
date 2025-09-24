@@ -47,14 +47,16 @@ Responda:
   - Impacto  
   - Evidências sanitizadas  
   - Mitigação sugerida  
-  - CVSS provisório  
+  - CVSS provisório
 
 ### 5) Disclosure
 - Senior e Novato decidem fluxo: vendor, CNA, ou publicação direta.  
-- Sempre seguir política de **responsible disclosure**.  
+- Sempre seguir política de **responsible disclosure**.
+- Marque o CVE-Hunters no report sempre que possível.
 
 ### 6) Publicação
-- Após fix ou fim do embargo → publicar advisory oficial.  
+- Após fix ou fim do embargo → publicar advisory oficial.
+- Faça PR no Git do CVE-Hunters para publicação em nosso site. 
 - O Novato é promovido a **`Aspirante`** 🎉  
 
 ---
@@ -74,77 +76,20 @@ Você se torna **Aspirante** quando:
 - Demonstrar conhecimento das políticas internas e conduzir disclosure com mínima supervisão.  
 
 **Benefícios de Aspirante**:  
-- Acesso ao canal `#coordination`.  
-- Pode abrir issues no tracker público.  
-- Participar de calls de triagem.  
+- Acesso a categorial ──── 🏹 ✦ CVE-HUNTERS PRINCIPAL.  
+- Participar de calls de triagem.
+- Hall da Fama
+- Posts no Linkedin
+- Reports privados
+- Payloads Privados
 
 ---
 
 ## 📝 Templates
 
-### Pedido de Revisão
-
-TÍTULO: [REVIEW REQUEST] <produto/sistema> — possível <tipo> (preliminar)
-
-Resumo: <1-2 linhas>
-Ambiente: <dev/staging/prod>
-Evidências: 
-- <print>
-- <curl -i '...'>
-
-Mini-triagem:
-- Reproduzível: (sim/não)
-- Requer credenciais: (sim/não)
-- Risco percebido: (baixo/médio/alto)
-- Pode impactar produção: (sim/não)
-
-O que preciso:
-- Revisão do risco
-- Orientação sobre PoC seguro
-- Próximos passos (vendor/CNA)
+LINK PARA TEMPLATES: 
 
 
-Checklist antes de contato com vendor
-	•	Steps to reproduce claros
-	•	Evidências sanitizadas
-	•	CVSS estimado + justificativa
-	•	Contato de disclosure mapeado
-	•	Timeline registrada
-	•	Revisão aprovada por 1 Senior
-
-Template de Relatório Final
-
-# CVE-Hunters Advisory — <produto> — <vulnerabilidade>
-
-## Resumo Executivo
-<descrição em 2-3 frases>
-
-## Affected Versions
-<lista de versões afetadas>
-
-## Impact
-<impacto em confidencialidade, integridade, disponibilidade>
-
-## Technical Details
-<steps to reproduce>
-
-## Mitigation
-<sugestão de correção ou workaround>
-
-## Timeline
-- Descoberta: DD/MM/YYYY
-- Contato: DD/MM/YYYY
-- Resposta vendor: DD/MM/YYYY
-- Fix: DD/MM/YYYY
-- Publicação: DD/MM/YYYY
-
-## Credits
-<descobridor + CVE-Hunters>
-
-## CVE ID
-<quando disponível>
-
-Template de Relatório Final
 
 
 🧭 Agora é com você!
