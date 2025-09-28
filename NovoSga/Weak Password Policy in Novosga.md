@@ -16,19 +16,18 @@ The application fails to enforce a strong password policy. As a result, users ca
 
 1. Navigate to the user registration page after logged in with the Administrator account
 
-![[Pasted image 20250928002128.png]]
+<img width="953" height="226" alt="image" src="https://github.com/user-attachments/assets/2f64869e-8376-4756-acad-c3dad3a0b749" />
+
 
 2. Create a new user account with the password `123456`.
 
-![[Pasted image 20250928002354.png]]
+<img width="942" height="739" alt="Pasted image 20250928002354" src="https://github.com/user-attachments/assets/2c727108-8bdb-4455-be2d-205c46e4c8b1" />
 
-```
-
-```
 
 3. The application accepts the weak password without restrictions and creates the account successfully.
 
-![[Pasted image 20250928002428.png]]
+<img width="939" height="784" alt="Pasted image 20250928002428" src="https://github.com/user-attachments/assets/20ecc328-9f6a-44a6-a409-6bb676e5965d" />
+
 
 ---
 
